@@ -1,0 +1,34 @@
+.login-pf {
+  background: #ddd;
+}
+.login-pf body {
+  background: transparent none;
+}
+
+.login-pf-page {
+ background-image: url('../img/farm-18.png');
+ background-position: top center;
+ background-size: initial;
+ height: 100%;
+ background-origin: padding-box;
+ padding: 54px 0;
+ background-repeat: no-repeat;
+}
+
+.card-pf::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MCUiIHZpZXdCb3g9IjAgMCAxMjgwIDE0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMWI3MDVkIj48cGF0aCBkPSJNMzIwIDI4YzMyMCAwIDMyMCA4NCA2NDAgODQgMTYwIDAgMjQwLTIxIDMyMC00MnY3MEgwVjcwYzgwLTIxIDE2MC00MiAzMjAtNDJ6Ii8+PC9nPjwvc3ZnPg==);
+  bottom: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+.card-pf {
+  width: 550px;
+  margin:auto;
+  z-index: 100;
+}
