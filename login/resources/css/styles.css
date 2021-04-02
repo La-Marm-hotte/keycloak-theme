@@ -1,5 +1,5 @@
 .login-pf {
-  background: #ddd;
+  background: #ededed;
 }
 .login-pf body {
   background: transparent none;
@@ -31,6 +31,23 @@
   width: 550px;
   margin:auto;
   z-index: 100;
+}
+
+#kc-header-wrapper {
+  padding: 62px 10px 20px;
+}
+
+.kc-logo-text {
+    background-image: url(../img/logo_v2_minimal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 63px;
+    width: 336px;
+    margin: 0 auto;
+}
+
+.kc-logo-text span{
+  display: none;
 }
 
 /* locale selector (from keycloak theme) */
