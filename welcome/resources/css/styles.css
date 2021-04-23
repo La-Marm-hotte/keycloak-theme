@@ -1,0 +1,6 @@
+body {
+    background-color:#ededed;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI3MCUiIHZpZXdCb3g9IjAgMCAxMjgwIDE0MCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMWI3MDVkIj48cGF0aCBkPSJNMzIwIDI4YzMyMCAwIDMyMCA4NCA2NDAgODQgMTYwIDAgMjQwLTIxIDMyMC00MnY3MEgwVjcwYzgwLTIxIDE2MC00MiAzMjAtNDJ6Ii8+PC9nPjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+}
