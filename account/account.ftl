@@ -25,6 +25,25 @@
                 </div>
             </div>
         </#if>
+        
+        <div class="form-group">
+	    <div class="col-sm-2 col-md-2">
+                 <label for="adherentNumber" class="control-label">${msg("adherentNumber")}</label>
+	    </div>
+	    <div class="col-sm-10 col-md-10">
+       		<input type="text" class="form-control" id="adherentNumber" name="adherentNumber" value="${(account.attributes.numeroAdherent!'')}" disabled read-only/>
+	   </div>
+	</div>
+
+        <div class="form-group">
+	    <div class="col-sm-2 col-md-2">
+                 <label for="membershipDate" class="control-label">${msg("membershipDate")}</label>
+	    </div>
+	    <div class="col-sm-10 col-md-10">
+       		<input type="text" class="form-control" id="membershipDate" name="membershipDate" value="" disabled read-only/>
+       		<input type="hidden" id="rawMembershipDate" value="${(account.attributes.membershipDate!'')}"/>
+	   </div>
+	</div>
 
         <div class="form-group ${messagesPerField.printIfExists('email','has-error')}">
             <div class="col-sm-2 col-md-2">
@@ -56,15 +75,6 @@
             </div>
         </div>
 
-	<div class="form-group">
-	    <div class="col-sm-2 col-md-2">
-                 <label for="adherentNumber" class="control-label">${msg("adherentNumber")}</label>
-	    </div>
-	    <div class="col-sm-10 col-md-10">
-       		<input type="text" class="form-control" id="adherentNumber" name="adherentNumber" value="${(account.attributes.numeroAdherent!'')}" disabled read-only/>
-	   </div>
-	</div>
-
 	<div class="form-group" ${messagesPerField.printIfExists('postalAddress','has-error')}">
 	    <div class="col-sm-2 col-md-2">
                  <label for="user.attributes.postalAddress" class="control-label">${msg("postalAddress")}</label> <span class="required">*</span>
@@ -80,16 +90,6 @@
 	    </div>
 	    <div class="col-sm-10 col-md-10">
        		<input type="text" class="form-control" id="user.attributes.telephoneNumber" name="user.attributes.telephoneNumber" value="${(account.attributes.telephoneNumber!'')}" required/>
-	   </div>
-	</div>
-	
-        <div class="form-group">
-	    <div class="col-sm-2 col-md-2">
-                 <label for="membershipDate" class="control-label">${msg("membershipDate")}</label>
-	    </div>
-	    <div class="col-sm-10 col-md-10">
-       		<input type="text" class="form-control" id="membershipDate" name="membershipDate" value="" disabled read-only/>
-       		<input type="hidden" id="rawMembershipDate" value="${(account.attributes.membershipDate!'')}"/>
 	   </div>
 	</div>
 
