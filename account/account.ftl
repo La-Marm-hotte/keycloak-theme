@@ -67,10 +67,10 @@
 
 	<div class="form-group" ${messagesPerField.printIfExists('postalAddress','has-error')}">
 	    <div class="col-sm-2 col-md-2">
-                 <label for="postalAddress" class="control-label">${msg("postalAddress")}</label> <span class="required">*</span>
+                 <label for="user.attributes.postalAddress" class="control-label">${msg("postalAddress")}</label> <span class="required">*</span>
 	    </div>
 	    <div class="col-sm-10 col-md-10">
-       		<input type="text" class="form-control" id="postalAddress" name="postalAddress" value="${(account.attributes.postalAddress!'')}"/>
+       		<input type="text" class="form-control" id="user.attributes.postalAddress" name="user.attributes.postalAddress" value="${(account.attributes.postalAddress!'')}"/>
 	   </div>
 	</div>
 
