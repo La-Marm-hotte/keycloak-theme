@@ -1,0 +1,37 @@
+.navbar-pf {
+    background-color: #ededed;
+}
+
+.navbar-pf .navbar-brand {
+  background-image: url(../img/logo_v2_minimal.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 56px;
+  line-height: 56px;
+  background-position: center center;
+  padding: 0;
+  width: 296px;
+}
+
+.navbar-pf .navbar-utility > li > a,
+.kc-dropdown > a {
+    color: black !important;
+}
+
+.sidebar-pf-left {
+    background: #ededed;
+}
+.sidebar-pf .nav-pills > li > a {
+    color: black;
+}
+.sidebar-pf .nav-category h2 {
+  color: black;
+}
+
+.realm-selector {
+  color: black;   
+}
+
+.realm-dropmenu {
+    background: #393f44;
+}
