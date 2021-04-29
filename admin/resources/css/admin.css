@@ -13,6 +13,7 @@
   width: 296px;
 }
 
+.navbar-pf .navbar-utility > li.open > a,
 .navbar-pf .navbar-utility > li > a,
 .kc-dropdown > a {
     color: black !important;
