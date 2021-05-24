@@ -45,13 +45,13 @@ module.controller('CoAdherentCtrl', ['$scope', '$modal', '$route', 'User', funct
                 realm: $route.current.params.realm
             }, (users) => {
                 $scope.temp.coAdhrent = users[0];
-                buildUserName();
+                buildUserDisplayName();
             });
         }
     }
     
     // build a user-friendly representation of the co-adherent
-    function buildUserName() {
+    function buildUserDisplayName() {
         $scope.temp.name = `${$scope.temp.coAdhrent.firstName} ${$scope.temp.coAdhrent.lastName} (n° ${$scope.temp.coAdhrent.attributes.numeroAdherent})`;
     }
     
