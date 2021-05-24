@@ -36,3 +36,13 @@
 .realm-dropmenu {
     background: #393f44;
 }
+
+.input-with-addon {
+    position: relative;
+}
+
+.input-with-addon .input-addon {
+    position: absolute;
+    right: 8px;
+    top: 3px
+}
