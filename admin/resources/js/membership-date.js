@@ -1,7 +1,7 @@
 
 module.controller('MembershipDateCtrl', ['$scope', function($scope) {
 
-    let date = new Date();
+    let date = new Date('1970-01-01T12:00:00');
     if ($scope.$parent.user.attributes.membershipDate) {
       date = fromLdapDate($scope.$parent.user.attributes.membershipDate);
     }
