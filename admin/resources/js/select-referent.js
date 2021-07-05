@@ -19,7 +19,7 @@ module.controller('SelectReferentCtrl', ['$scope', 'realm', 'groupId', 'GroupMem
     }
     
     $scope.nextPage = function() {
-        GroupMembership.query({realm: realm.id, groupId: $scope.groupId, first: $scope.first, max: $scope.max}, (members) => {
+        GroupMembership.query({ realm: realm.realm, groupId: $scope.groupId, first: $scope.first, max: $scope.max }, (members) => {
             $scope.members = members;
             if (members.length == $scope.max) {
                 $scope.hasMore = true;

@@ -6,7 +6,7 @@ module.controller('SelectCoAdherentCtrl', ['$scope', 'realm', 'Group', 'GroupMem
     $scope.hasMore = false;
     
     // fetch the ID of the group co-adherent
-    Group.query({realm: realm.id}, (groups) => {
+    Group.query({realm: realm.realm}, (groups) => {
         const coAdhGroup = groups.find(g => g.name === 'co-adherent');
         $scope.groupId = coAdhGroup.id;
         $scope.nextPage();
@@ -23,7 +23,7 @@ module.controller('SelectCoAdherentCtrl', ['$scope', 'realm', 'Group', 'GroupMem
     }
     
     $scope.nextPage = function() {
-        GroupMembership.query({realm: realm.id, groupId: $scope.groupId, first: $scope.first, max: $scope.max}, (members) => {
+        GroupMembership.query({realm: realm.realm, groupId: $scope.groupId, first: $scope.first, max: $scope.max}, (members) => {
             $scope.members = members;
             if (members.length == $scope.max) {
                 $scope.hasMore = true;
